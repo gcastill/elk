@@ -1,0 +1,14 @@
+### create a new index
+PUT http://localhost:9200/movies
+Content-Type: application/json
+
+{
+    "mappings": {
+        "properties" : {
+            "year": {"type":"date"}
+        }
+    }
+}
+
+### delete the new index 
+DELETE  http://localhost:9200/movies
