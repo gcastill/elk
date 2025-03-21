@@ -1,0 +1,25 @@
+
+### update 
+PUT http://localhost:9200/movies/_doc/109487?pretty
+Content-Type: application/json
+
+{
+    "genre" : ["IMAX", "Sci-Fi"],
+    "title": "Interstellar foo",
+    "year": 2014
+}
+
+### Check the update 
+GET http://localhost:9200/movies/_doc/109487?pretty
+
+
+### update 
+POST http://localhost:9200/movies/_update/109487
+Content-Type: application/json
+
+{
+  "doc": {
+    "title": "Interstellar"
+  }
+}
+

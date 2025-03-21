@@ -1,0 +1,8 @@
+### find the dark night 
+GET http://localhost:9200/movies/_search/?q=Dark&pretty
+
+### delete the doc
+DELETE http://localhost:9200/movies/_doc/58559?pretty
+
+### find the dark night 
+GET http://localhost:9200/movies/_search/?q=Dark&pretty
