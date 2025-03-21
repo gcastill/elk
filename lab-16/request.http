@@ -1,0 +1,3 @@
+
+### download  movie lens data
+curl http://media.sundog-soft.com/es/ml-latest-small.zip > tmp/ml-latest-small.zip
