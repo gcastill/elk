@@ -1,0 +1,18 @@
+services:
+  elasticsearch:
+    image: elasticsearch:8.10.2
+    volumes:
+      - ~/elk/elasticsearch/data:/usr/share/elasticsearch/data
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - elk
+
+networks:
+  elk:
+    driver: bridge
