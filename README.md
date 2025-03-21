@@ -1,5 +1,6 @@
-Small Repo to capture my lab notes
-[https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/](Course Link)
+Small repository to capture my lab notes for the Udemy course [Elasticsearch 8 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/)
+
+Docker compose is used for running the stack instead of virtual box.
 
 The .http files can be run using below plugin for VS Code. Curl commands in these documents deal with large response bodies and should be executed from the root directory of the repository.
 
