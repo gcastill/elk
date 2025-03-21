@@ -13,12 +13,10 @@ Content-Type: application/json
 ### download documents (do this in bash)
 curl http://media.sundog-soft.com/es8/shakespeare_8.0.json > tmp/shakespeare_8.0.json
 
-
 ### import the content 
-PUT http://localhost:9200/shakespeare/_bulk 
-Content-Type: application/json
-
-< tmp/shakespeare_8.0.json
+curl -X PUT  http://localhost:9200/shakespeare/_bulk \
+  -H "Content-Type: application/json" \
+  --data-binary @tmp/shakespeare_8.0.json
 
 ### search
 GET http://localhost:9200/shakespeare/_search?pretty
